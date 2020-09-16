@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+#message{
+    background-color: rebeccapurple;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    padding: 1% 2%;
+}
