@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+}
+#btn{
+    background-color: rebeccapurple;
+    color: white;
+    padding: 1rem;
+    margin-top: 20%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn:hover{
+    transform: translateY(-2px);
+}
+#popup-container{
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+}
+.toast{
+    background-color: blue;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+}
