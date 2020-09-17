@@ -86,7 +86,7 @@ hr{
     box-shadow: 1px 1px 3px 3px #dfe6e9;
     color: white;
     background: linear-gradient(45deg,skyblue,dodgerblue);
-    transition: color 1s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .project-link a{
@@ -102,7 +102,7 @@ hr{
 .project-link a:hover{
     color: white;
     background: linear-gradient(45deg,skyblue,dodgerblue);
-    transition: color 1s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 .fab{
     color: black;
