@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+header{
+    width: 70%;
+    margin: 1% 15%;
+    color: black;
+    background: #f3f3f3;
+    font-size: 40px;
+    padding: 5px 6px;
+    text-align: center;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+.search{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    border: 2px solid black;
+    height: 50px;
+    border-radius: 20px;
+}
+.fa-search{
+    font-size: 30px;
+    margin: 30% -40%;
+    cursor: pointer;
+    margin-left: 10%;
+}
+.search-box{
+    width: 92%;
+    height: auto;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    font-size: 120%;
+    border-radius: 20px;
+    margin-left: 2%;
+}
+.search-btn{
+    cursor: pointer;
+}
+span{
+    background-color: white;
+    border-radius: 20px;
+}
+.projects{
+    width: 80%;
+    margin-left: 10%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.project{
+    background-color: #ecf0f1;
+    margin: 2% 4%;
+    color: black;
+    font-weight: bold;
+    font-size: 120%;
+    text-align: center;
+    width: 25%;
+}
+.project:hover{
+    box-shadow: 1px 1px 3px 3px #dfe6e9;
+    color: white;
+    width: 26%;
+}
+
+.project-link a{
+    display: block;
+    height: inherit;
+    width: inherit;
+    color: black;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.17em;
+    padding: 20px 48px;
+}
+.project-link a:hover{
+    color: white;
+    background: linear-gradient(45deg,skyblue,dodgerblue);
+    transition: color 1s ease-in-out;
+}
+
+@media screen and (max-width: 900px){
+    .projects{
+        flex-direction: column;
+    }
+    .project{
+        width: 100%;
+    }
+    .search-box{
+        width: 85%;
+    }
+}
