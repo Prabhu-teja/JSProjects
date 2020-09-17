@@ -20,6 +20,23 @@ header{
 }
 a{
     text-decoration: none;
+    cursor: pointer;
+}
+footer{
+    bottom: 4%;
+    margin: 0 10%;
+    width: 80%;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+hr{
+    border: 0;
+    border-top: solid 1px #444;
+    border-top-color: rgba(0,0,0,0.35);
+    box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.1);
+    height: 1px;
+    margin: 3em 0;
 }
 
 .search{
@@ -49,10 +66,6 @@ a{
 .search-btn{
     cursor: pointer;
 }
-span{
-    background-color: white;
-    border-radius: 20px;
-}
 .projects{
     width: 80%;
     margin-left: 10%;
@@ -61,7 +74,7 @@ span{
     flex-wrap: wrap;
 }
 .project{
-    background-color: #ecf0f1;
+    background-color: #f3f3f3;
     margin: 2% 4%;
     color: black;
     font-weight: bold;
@@ -72,7 +85,8 @@ span{
 .project:hover{
     box-shadow: 1px 1px 3px 3px #dfe6e9;
     color: white;
-    width: 26%;
+    background: linear-gradient(45deg,skyblue,dodgerblue);
+    transition: color 1s ease-in-out;
 }
 
 .project-link a{
@@ -90,6 +104,41 @@ span{
     background: linear-gradient(45deg,skyblue,dodgerblue);
     transition: color 1s ease-in-out;
 }
+.fab{
+    color: black;
+    background-color: #444;
+    padding: 8px;
+    border-radius: 10px;
+}
+.fab:hover{
+    color: blue;
+    background-color: black;
+    transition: color .21s ease-in-out;
+    transform: translateY(-3px);
+}
+.social-media{
+    margin-bottom: 12px;
+    border: 0;/*
+    border-top: 3px solid #8395a7;
+    border-bottom: 3px solid #8395a7;*/
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.social-media div{
+    padding-bottom: 30px;
+    padding-top: 10px;
+    color: #636363;
+}
+footer section{
+    padding: 10px;
+    text-align: center;
+    color: #2980b9;
+    font-size: 40px;
+}
+.copyright{
+    color: #666;
+}
+
 
 @media screen and (max-width: 900px){
     .projects{
@@ -97,8 +146,17 @@ span{
     }
     .project{
         width: 100%;
+        margin-left: 1.5%;
+    }
+    .search{
+        width: 90%;
+        margin-left: 5.5%;
     }
     .search-box{
         width: 85%;
+    }
+    header{
+        width: 90%;
+        margin-left: 5%;
     }
 }
