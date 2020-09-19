@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="countdown">10:00</p>
+    <div class="form">
+        <input type="number" id="counter" title="Format: Minutes" placeholder="Minutes Ex: 5" min="0" max="100">
+        <input type="submit" id="start" value="Start">
+    </div>
+    <p id="countdown">00:00</p>
     <p id="message" style="display: none">
         Time Up
         <button id="btn" class="button">&#x2716;</button>

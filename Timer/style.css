@@ -3,12 +3,59 @@ body{
     margin: 0;
     background-color: black;
 }
+.form{
+    top: 20%;
+    left: 30%;
+    position: fixed;
+    height: 20%;
+    width: 40%;
+    text-align: center;
+}
+#counter{
+    -webkit-appearance: none;
+    height: 30px;
+    font-size: 20px;
+    padding: 10px 10px;
+    outline: none;
+    top: 27%;
+    left: 32.5%;
+    position: fixed;
+    width: 23.7%;
+}
+#counter::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+#start{
+    cursor: pointer;
+    width: 10%;
+    position: fixed;
+    top: 27.7%;
+    left: 59%;
+    height: 44px;
+    padding: 2px 3px;
+    text-align: center;
+    background-color: tomato;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 0;
+}
+#start:hover{
+    background-color: green;
+    border: 1px solid blue;
+    outline: none;
+    color: white;
+}
 #countdown{
     font-size: 50px;
     margin: 0;
     height: 70px;
-    width: 200px;
     color: white;
+    position: fixed;
+    top: 45.3%;
+    left: 40.5%;
+    font-size: 80px;
 }
 #message{
     color: white;
