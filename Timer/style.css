@@ -22,9 +22,10 @@ body{
     position: fixed;
     width: 23.7%;
 }
-#counter::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 #start{
     cursor: pointer;

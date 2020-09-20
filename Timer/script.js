@@ -1,4 +1,5 @@
 var submit=document.getElementById("start");
+var enter=document.getElementById("counter");
 
 function btn(){
     var btn=document.getElementById("btn");
@@ -8,6 +9,11 @@ function btn(){
 }
 btn();
 submit.addEventListener("click",timer);
+enter.addEventListener("keyup",()=>{
+    if(event.keyCode===13){
+        timer();
+    }
+});
 function timer(){
     var start=document.getElementById("counter").value;
     //console.log("STARTED");
