@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+.box{
+    box-sizing: border-box;
+    margin-top: 10%;
+    margin-left: 20%;
+    font-size: 30px;
+}
+input[type="text"]{
+    box-shadow: 0px 0px 10px 0px #a3a3a3;
+    width: 25%;
+    height: 50px;
+    margin-top: 3%;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    padding: 0px 20px;
+}
+.fa-clone{
+    height: 50px;
+    width: 7%;
+    text-align: center;
+    position: relative;
+    left: -85px;
+    cursor: pointer;
+    background-color: inherit;
+    outline: none;
+    border: 0;
+}
+.popup{
+    font-size: 20px;
+    left: -100px;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px #a3a3a3;
+    padding: 10px;
+    display: none;
+}
+.popup.active{
+    font-size: 20px;
+    left: -100px;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px #a3a3a3;
+    padding: 10px;
+    display: initial;
+}
+.generate{
+    background-color: rgb(51, 54, 56, 3);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    width: 20%;
+    margin-top: 2%;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+.generate:active{
+    background-color: darkorchid;
+}
+input::selection{
+    color: inherit;
+    background-color: inherit;
+}
