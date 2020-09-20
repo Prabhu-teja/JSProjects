@@ -10,15 +10,15 @@ body{
 
 .page{
     height: inherit;
-    width: 80%;
+    width: 100%;
     position: fixed;
-    display: flex;
 }
 
 #time{
     text-align: center;
     font-size: 80px;
-    top: 30%;
-    left: 35%;
+    bottom: 44%;
+    right: 25.6%;
     position: fixed;
+    margin: 0;
 }
