@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="body">
+            <textarea id="input_output" spellcheck="false" readonly class="input_output"></textarea>
+            <div class="buttons">
+                <div class="row">
+                    <div class="clear" id="clear">C</div>
+                    <div class="button" id="/" onclick="document.getElementById('input_output').value+='/'">/</div>
+                    <div class="button" id="*" onclick="document.getElementById('input_output').value+='*'">*</div>
+                </div>
+                <div class="row">
+                    <div class="button" id="7" onclick="document.getElementById('input_output').value+='7'">7</div>
+                    <div class="button" id="8" onclick="document.getElementById('input_output').value+='8'">8</div>
+                    <div class="button" id="9" onclick="document.getElementById('input_output').value+='9'">9</div>
+                    <div class="button" id="-" onclick="document.getElementById('input_output').value+='-'">-</div>
+                </div>
+                <div class="row">
+                    <div class="button" id="4" onclick="document.getElementById('input_output').value+='4'">4</div>
+                    <div class="button" id="5" onclick="document.getElementById('input_output').value+='5'">5</div>
+                    <div class="button" id="6" onclick="document.getElementById('input_output').value+='6'">6</div>
+                    <div class="add" id="+" onclick="document.getElementById('input_output').value+='+'">+</div>
+                </div>
+                <div class="row">
+                    <div class="button" id="1" onclick="document.getElementById('input_output').value+='1'">1</div>
+                    <div class="button" id="2" onclick="document.getElementById('input_output').value+='2'">2</div>
+                    <div class="button" id="3" onclick="document.getElementById('input_output').value+='3'">3</div>
+                    <div class="button" style="height: 0;border: 0;"></div>
+                </div>
+                <div class="row">
+                    <div class="button" id="0" onclick="document.getElementById('input_output').value+='0'">0</div>
+                    <div class="button" id="00" onclick="document.getElementById('input_output').value+='00'">00</div>
+                    <div class="button" id="." onclick="document.getElementById('input_output').value+='.'">.</div>
+                    <div class="equal" id="equal">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
