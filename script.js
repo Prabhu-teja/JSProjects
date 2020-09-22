@@ -9,7 +9,7 @@ function search(){
     const input=search_box.value;
     for(var i=0;i<a.length;i++){
         if(a[i].innerText.toLowerCase().indexOf(input.toLowerCase())>=0){
-            a[i].style.display="inherit";
+            a[i].style.display="";
         }
         else{
             a[i].style.display="none";
