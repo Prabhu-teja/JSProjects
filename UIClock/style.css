@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: center;
 }
+body{
+    transition: 0.5s;
+}
 header{
     text-align: right;
     padding: 20px 24px;
@@ -24,7 +27,7 @@ header{
     background-color: black;
 }
 .toggle:checked{
-    background-color: blue;
+    background-color: white;
     outline: none;
 }
 /*
