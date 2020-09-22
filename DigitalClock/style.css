@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    cursor: pointer;
+}
+body{
+    background-color: #192a56;
+}
+.app{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+header{
+    font-size: 30px;
+    color: white;
+}
+.clock{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    margin-top: 3%;
+    display: flex;
+}
+.box{
+    margin: 10px;
+    width: 20%;
+    height: 80%;
+    color: white;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom,transparent,black);
+}
+.hr,.min{
+    height: 80%;
+    background-color: #00a8ff;
+}
+.sec{
+    height: 80%;
+    background-color: #FC427B;
+}
+.hr,.min,.sec{
+    font-size: 170px;
+}
+.content,.content-2{
+    line-height: 50px;
+}
+.content{
+    background-color: #0097e6;
+    font-size: 40px;
+}
+.content-2{
+    background-color: #B33771;
+    font-size: 40px;
+}
+.meridian{
+    color: black;
+    background-color: white;
+    height: cover;
+    width: cover;
+    padding: 0.5% 0.5%;
+    line-height: 30px;
+    font-size: 45px;
+    margin-top: 12%;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom,transparent,black);
+}
+
+
+@media screen and (max-width: 900px){
+    .box{
+        width: 25%;
+        height: 65%;
+    }       
+    .hr,.min,.sec{
+        font-size: 80px;
+        vertical-align: center;
+    }
+    .content,.content-2{
+        font-size: 15px;
+    }
+    .meridian{
+        margin-top: 22%;
+    }
+}
