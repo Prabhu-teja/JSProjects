@@ -10,11 +10,11 @@ setInterval(()=>{
     let ss=date.getSeconds();
     if(hh>=12){
         meridian.innerText="PM";
+        hh-=12;
     }
     else{
         meridian.innerText="AM";
     }
-    hh=hh%24;
     hh=hh<10?"0"+hh:hh;
     mm=mm<10?"0"+mm:mm;
     ss=ss<10?"0"+ss:ss;
