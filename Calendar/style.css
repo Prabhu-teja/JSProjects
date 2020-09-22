@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: none;
+    text-align: center;
+}
+.app{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.image{
+    background-image: url("city.jpg");
+    filter: blur(3px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.clock{
+    background-color: white;
+    color: black;
+    height: 50%;
+    width: 25%;
+    position: absolute;
+    top: 25%;
+    left: 37.5%;
+}
+.month{
+    background-color: #ff6b6b;
+    padding: 10px;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+}
+.date{
+    font-size: 150px;
+    font-weight: 900;
+}
+.day,.year{
+    padding: 10px;
+    font-size: 30px;
+}
+.day{
+    line-height: 50px;
+}
