@@ -20,7 +20,7 @@ function timer(){
     var time=start*60;
     var countdown=document.getElementById("countdown");
     var func=setInterval(()=>{
-        if(start<=0){
+        if(time<=0){
             //console.log("ENDED");
             document.getElementById("message").style.display="";
             clearInterval(func);
