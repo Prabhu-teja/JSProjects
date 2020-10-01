@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: sans-serif;
+    justify-content: center;
+}
+body{
+    background-image: linear-gradient(to top right,red,yellow);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+input{
+    outline: none;
+}
+.app{
+    background-color: white;
+    color: black;
+    width: 30%;
+    position: fixed;
+    top: 25%;
+    margin-left: 35%;
+    border-radius: 20px;
+}
+.banner{
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    margin: 10%;
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 3px;
+    background-color: red;
+    left: -10px;
+}
+.data{
+    font-size: 15px;
+    margin: 5% 10% 0 10%;
+}
+.data input{
+    font-size: 20px;
+    width: 80%;
+    padding: 10px 20px;
+    outline: none;
+}
+.data input:last-child{
+    margin-bottom: 10%;
+    width: 50%;
+    background-color: #00a8ff;
+    border: 0;
+    color: white;
+    font-weight: 100px;
+}
+.data input:last-child:hover{
+    background-color: red;
+}
+span{
+    position: relative;
+    top: -35px;
+    left: 20px;
+    font-size: 20px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+input:focus{
+    box-shadow: 0 0 2px 5px #f3f3f3;
+}
+input:focus ~ span,input:valid ~ span{
+    top: -70px;
+    left: 0px;
+}
