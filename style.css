@@ -1,173 +1,207 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
 }
-header{
-    width: 70%;
-    margin: 1% 15%;
-    margin-right: 5%;
-    color: black;
-    background: #f3f3f3;
-    font-size: 40px;
-    padding: 5px 6px;
-    text-align: center;
-    cursor: pointer;
+header {
+	width: 70%;
+	margin: 1% 15%;
+	margin-right: 0;
+	color: black;
+	background: #f3f3f3;
+	font-size: 40px;
+	padding: 5px 6px;
+	text-align: center;
+	cursor: pointer;
 }
-a{
-    text-decoration: none;
-    cursor: pointer;
+a {
+	text-decoration: none;
+	cursor: pointer;
 }
-footer{
-    bottom: 4%;
-    margin: 0 10%;
-    width: 80%;
-    padding: 20px;
-    color: black;
-    text-align: center;
+footer {
+	bottom: 4%;
+	margin: 0 10%;
+	width: 80%;
+	padding: 20px;
+	color: black;
+	text-align: center;
 }
-hr{
-    border: 0;
-    border-top: solid 1px #444;
-    border-top-color: rgba(0,0,0,0.35);
-    box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.1);
-    height: 1px;
-    margin: 3em 0;
-}
-
-.add{
-    width: 5%;
-    height: 50px;
-    margin-top: 15px;
-    color: black;
-    font-size: 30px;
-}
-.add:active{
-    background-color: green;
-    color: white;
-}
-.search{
-    width: 80%;
-    margin-left: 10%;
-    display: flex;
-    border: 2px solid black;
-    height: 50px;
-    border-radius: 20px;
-}
-.fa-search{
-    font-size: 30px;
-    margin: 30% -40%;
-    cursor: pointer;
-    margin-left: 10%;
-}
-.search-box{
-    width: 92%;
-    height: auto;
-    -webkit-appearance: none;
-    border: none;
-    outline: none;
-    font-size: 120%;
-    border-radius: 20px;
-    margin-left: 2%;
-}
-.search-btn{
-    cursor: pointer;
-}
-.projects{
-    width: 80%;
-    margin-left: 10%;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.project{
-    background-color: #f3f3f3;
-    margin: 2% 4%;
-    color: black;
-    font-weight: bold;
-    font-size: 120%;
-    text-align: center;
-    width: 25%;
-}
-.project:hover{
-    box-shadow: 1px 1px 3px 3px #dfe6e9;
-    color: white;
-    background: linear-gradient(45deg,skyblue,dodgerblue);
-    transition: color 0.3s ease-in-out;
+hr {
+	border: 0;
+	border-top: solid 1px #444;
+	border-top-color: rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+	height: 1px;
+	margin: 3em 0;
 }
 
-.project-link a{
-    display: block;
-    height: inherit;
-    width: inherit;
-    color: black;
-    margin: 0;
-    font-weight: bold;
-    font-size: 1.17em;
-    padding: 20px 48px;
+.add {
+	width: 5%;
+	height: 50px;
+	margin-top: 15px;
+	color: black;
+	font-size: 30px;
 }
-.project-link a:hover{
-    color: white;
-    background: linear-gradient(45deg,skyblue,dodgerblue);
-    transition: color 0.3s ease-in-out;
+.add:active {
+	background-color: green;
+	color: white;
 }
-.fab{
-    color: black;
-    background-color: #444;
-    padding: 8px;
-    border-radius: 10px;
+.search {
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	border: 2px solid black;
+	height: 50px;
+	border-radius: 20px;
 }
-.fab:hover{
-    color: blue;
-    background-color: black;
-    transition: color .21s ease-in-out;
-    transform: translateY(-3px);
+.fa-search {
+	font-size: 30px;
+	margin: 30% -40%;
+	cursor: pointer;
+	margin-left: 10%;
 }
-.social-media{
-    margin-bottom: 12px;
-    border: 0;/*
+.search-box {
+	width: 92%;
+	height: auto;
+	-webkit-appearance: none;
+	border: none;
+	outline: none;
+	font-size: 120%;
+	border-radius: 20px;
+	margin-left: 2%;
+}
+.search-btn {
+	cursor: pointer;
+}
+.projects {
+	width: 80%;
+	margin-left: 10%;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.project {
+	background-color: #f3f3f3;
+	margin: 2% 4%;
+	color: black;
+	font-weight: bold;
+	font-size: 120%;
+	text-align: center;
+	width: 25%;
+}
+.project:hover {
+	position: relative;
+	box-shadow: 1px 1px 3px 3px #dfe6e9;
+	color: white;
+	background: linear-gradient(45deg, skyblue, dodgerblue);
+	transition: color 0.3s ease-in-out;
+}
+
+.selection {
+	position: absolute;
+	background-color: white;
+	font-size: 20px;
+	text-align: center;
+	display: grid;
+	max-height: 2.2em;
+	max-width: fit-content;
+	overflow: hidden;
+	top: 3%;
+	right: 1em;
+}
+.selection .option {
+	color: black;
+	text-decoration: none;
+	border: 1px solid black;
+	line-height: 200%;
+	height: 2em;
+	width: 8em;
+}
+.selection .option:hover {
+	background-color: dodgerblue;
+	color: white;
+}
+.selection:hover {
+	max-height: max-content;
+}
+.option .fas {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+.project-link a {
+	display: block;
+	height: inherit;
+	width: inherit;
+	color: black;
+	margin: 0;
+	font-weight: bold;
+	font-size: 1.17em;
+	padding: 20px 48px;
+}
+.project-link a:hover {
+	color: white;
+}
+.fab {
+	color: black;
+	background-color: #444;
+	padding: 8px;
+	border-radius: 10px;
+}
+.fab:hover {
+	color: blue;
+	background-color: black;
+	transition: color 0.21s ease-in-out;
+	transform: translateY(-3px);
+}
+.social-media {
+	margin-bottom: 12px;
+	border: 0; /*
     border-top: 3px solid #8395a7;
     border-bottom: 3px solid #8395a7;*/
-    font-size: 40px;
-    padding-bottom: 30px;
+	font-size: 40px;
+	padding-bottom: 30px;
 }
-.social-media div{
-    padding-bottom: 30px;
-    padding-top: 10px;
-    color: #636363;
+.social-media div {
+	padding-bottom: 30px;
+	padding-top: 10px;
+	color: #636363;
 }
-footer section{
-    padding: 10px;
-    text-align: center;
-    color: #2980b9;
-    font-size: 40px;
+footer section {
+	padding: 10px;
+	text-align: center;
+	color: #2980b9;
+	font-size: 40px;
 }
-.copyright{
-    color: #666;
+.copyright {
+	color: #666;
 }
 
-@media screen and (max-width: 900px){
-    .projects{
-        flex-direction: column;
-    }
-    .project{
-        width: 100%;
-        margin-left: 1.5%;
-    }
-    .search{
-        width: 90%;
-        margin-left: 5.5%;
-    }
-    .search-box{
-        width: 85%;
-    }
-    header{
-        width: 90%;
-        margin-left: 5%;
-    }
+@media screen and (max-width: 900px) {
+	.projects {
+		flex-direction: column;
+	}
+	.project {
+		width: 100%;
+		margin-left: 1.5%;
+	}
+	.search {
+		width: 68%;
+		margin-left: 5.5%;
+	}
+	.search-box {
+		width: 85%;
+	}
+	header {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.selection {
+		top: 3.7em;
+	}
 }
